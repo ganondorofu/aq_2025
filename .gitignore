@@ -1,0 +1,126 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# Pipenv
+Pipfile.lock
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# TensorFlow / Keras
+*.h5
+*.hdf5
+*.pb
+checkpoint
+saved_model/
+
+# 学習済みモデル（大きいため）
+*.keras
+model.h5
+
+# 実験結果ディレクトリ（大量のファイルが生成される）
+auto_experiments_*/
+comprehensive_experiments_*/
+experiments_*/
+
+# ログファイル
+*.log
+training_output.log
+evaluation_output.log
+
+# 結果ファイル（CSV, TXT）
+result.csv
+evaluation_result.txt
+comprehensive_results.csv
+
+# グラフ画像（自動生成される）
+*_graph_*.png
+*_result_*.png
+comprehensive_graphs.png
+training_result_*.png
+
+# 圧縮ファイル
+*.zip
+*.tar.gz
+*.rar
+
+# 一時ファイル
+*.tmp
+*.temp
+*.bak
+
+# データセット（サイズが大きい場合はコメントアウト解除）
+# img_train/
+# img_test/
+# dataset/
+
+# マージされた一時データセット
+img_train_merged/
+img_test_merged/
+
+# 最適化実験結果
+smart_optimization_*/
+smart_search_*/
+optimization_results.json
+optimization_progress.png
+
+# 予測レポート
+prediction_report/
+PREDICTION_REPORT.md
+failed_images/
+correct_images/
+
+# GPU関連
+gputest.py
+benchmark.py
+
+# その他
+.pytest_cache/
+.coverage
+htmlcov/
+
+janken/janken/img_test/
+janken/janken/img_train/
+janken/janken/img_test_merged/
+janken/janken/img_train_merged/
+janken/janken/prediction_report/
+janken/janken/smart_optimization_*/
+janken/janken/smart_search_*/
+janken/janken/auto_experiments_*/
+janken/janken/comprehensive_experiments_*/
