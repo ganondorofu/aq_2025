@@ -13,8 +13,8 @@ batch_size = 16  # GPU メモリ不足対策: 32→16に削減
 epochs = 100  # 最大100エポック (EarlyStoppingで自動調整)
 learning_rate = 0.0001
 
-# サブディレクトリから選択する画像数 (Noneですべて使用)
-MAX_SUBDIR_IMAGES = None
+# サブディレクトリから選択する画像数 (None=すべて使用, 数値指定でランダム選択)
+MAX_SUBDIR_IMAGES = None  # ← すべてのサブディレクトリの全画像を使用
 
 preprocessing_function = tf.keras.applications.mobilenet_v2.preprocess_input
 optimizer = tf.keras.optimizers.Adam(learning_rate=learning_rate)
@@ -204,9 +204,14 @@ def plot_result(history):
 def _main():
     print("🔄 サブディレクトリを含むデータセットを準備中...")
     
+    # スクリプトの場所を基準にパスを設定
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    train_dir = os.path.join(script_dir, "img_train")
+    test_dir = os.path.join(script_dir, "img_test")
+    
     # 統合されたデータセットディレクトリを作成
-    merged_train_dir = create_merged_dataset("img_train")
-    merged_test_dir = create_merged_dataset("img_test")
+    merged_train_dir = create_merged_dataset(train_dir)
+    merged_test_dir = create_merged_dataset(test_dir)
     
     # 画像数をカウント
     count_images(merged_train_dir)
