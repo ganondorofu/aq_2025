@@ -1,0 +1,95 @@
+{
+  "start_time": "2025-10-31T12:33:32.416413",
+  "end_time": "2025-10-31T16:07:17.058713",
+  "total_runs": 7,
+  "best_result": {
+    "seed": 698230,
+    "run": 2,
+    "train_acc": 0.9996767044067383,
+    "val_acc": 0.8983050584793091,
+    "test_acc": 0.8983050584793091,
+    "test_loss": 0.4191567301750183,
+    "model_name": "model_seed698230_run2.keras",
+    "epochs_trained": 33,
+    "timestamp": "2025-10-31T13:47:54.953874"
+  },
+  "all_results": [
+    {
+      "seed": 698230,
+      "run": 2,
+      "train_acc": 0.9996767044067383,
+      "val_acc": 0.8983050584793091,
+      "test_acc": 0.8983050584793091,
+      "test_loss": 0.4191567301750183,
+      "model_name": "model_seed698230_run2.keras",
+      "epochs_trained": 33,
+      "timestamp": "2025-10-31T13:47:54.953874"
+    },
+    {
+      "seed": 977474,
+      "run": 6,
+      "train_acc": 1.0,
+      "val_acc": 0.8983050584793091,
+      "test_acc": 0.8983050584793091,
+      "test_loss": 0.47500014305114746,
+      "model_name": "model_seed977474_run6.keras",
+      "epochs_trained": 35,
+      "timestamp": "2025-10-31T15:44:39.251394"
+    },
+    {
+      "seed": 484116,
+      "run": 7,
+      "train_acc": 0.9987067580223083,
+      "val_acc": 0.8813559412956238,
+      "test_acc": 0.8813559412956238,
+      "test_loss": 0.36779528856277466,
+      "model_name": "model_seed484116_run7.keras",
+      "epochs_trained": 21,
+      "timestamp": "2025-10-31T16:07:17.047712"
+    },
+    {
+      "seed": 714493,
+      "run": 3,
+      "train_acc": 1.0,
+      "val_acc": 0.8644067645072937,
+      "test_acc": 0.8644067645072937,
+      "test_loss": 0.5488419532775879,
+      "model_name": "model_seed714493_run3.keras",
+      "epochs_trained": 31,
+      "timestamp": "2025-10-31T14:20:33.725252"
+    },
+    {
+      "seed": 998627,
+      "run": 1,
+      "train_acc": 1.0,
+      "val_acc": 0.8305084705352783,
+      "test_acc": 0.8305084705352783,
+      "test_loss": 0.49520912766456604,
+      "model_name": "model_seed998627_run1.keras",
+      "epochs_trained": 38,
+      "timestamp": "2025-10-31T13:12:37.984057"
+    },
+    {
+      "seed": 280472,
+      "run": 5,
+      "train_acc": 0.9990300536155701,
+      "val_acc": 0.7966101765632629,
+      "test_acc": 0.7966101765632629,
+      "test_loss": 0.6748322248458862,
+      "model_name": "model_seed280472_run5.keras",
+      "epochs_trained": 22,
+      "timestamp": "2025-10-31T15:07:20.256786"
+    },
+    {
+      "seed": 133043,
+      "run": 4,
+      "train_acc": 0.9990300536155701,
+      "val_acc": 0.7796609997749329,
+      "test_acc": 0.7796609997749329,
+      "test_loss": 0.7162683010101318,
+      "model_name": "model_seed133043_run4.keras",
+      "epochs_trained": 22,
+      "timestamp": "2025-10-31T14:43:53.473703"
+    }
+  ]
+}

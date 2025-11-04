@@ -40,9 +40,9 @@ def main():
     image_paths = test_ds.file_paths
 
     # 学習済みモデルロード（.kerasを優先、なければ.h5）
-    if os.path.exists("model.keras"):
-        model = tf.keras.models.load_model("model.keras")
-        print("model.kerasを読み込みました")
+    if os.path.exists("model_with_subdirs.keras"):
+        model = tf.keras.models.load_model("model_with_subdirs.keras")
+        print("model_with_subdirs.kerasを読み込みました")
     elif os.path.exists("model.h5"):
         model = tf.keras.models.load_model("model.h5")
         print("model.h5を読み込みました")

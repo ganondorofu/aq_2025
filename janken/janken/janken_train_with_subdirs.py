@@ -348,6 +348,12 @@ def _main():
     print("  - mlp_graph_accuracy_with_subdirs.png")
     print("  - mlp_graph_loss_with_subdirs.png")
     
+    # 最終精度評価
+    print("\n📊 最終評価を実行中...")
+    test_loss, test_acc = model.evaluate(test_ds, verbose=0)
+    train_acc = max(history.history['accuracy'])
+    val_acc = max(history.history['val_accuracy'])
+    
     # 一時ディレクトリをクリーンアップ
     print("\n🧹 一時ファイルをクリーンアップ中...")
     if os.path.exists(merged_train_dir):
@@ -357,8 +363,13 @@ def _main():
     print("✅ クリーンアップ完了")
     
     print("\n" + "=" * 60)
-    print("🎉 すべての処理が完了しました!")
+    print("🎉 学習が完了しました!")
     print("=" * 60)
+    print(f"\n📈 最高訓練精度: {train_acc*100:.2f}%")
+    print(f"📈 最高検証精度: {val_acc*100:.2f}%")
+    print(f"📈 最終テスト精度: {test_acc*100:.2f}%")
+    print(f"📉 最終テスト損失: {test_loss:.4f}")
+    print("\n" + "=" * 60)
 
 
 if __name__ == "__main__":
